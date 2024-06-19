@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const mongooseAggregatePaginate = require("mongoose-aggregate-paginate-v2");
 
-const videoSchema = mongoose.Schema(
+const videoSchema = new mongoose.Schema(
   {
     videoFile: {
       //cloudinary url

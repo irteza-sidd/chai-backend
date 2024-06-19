@@ -1,7 +1,7 @@
 const { app } = require("./app");
 const { connectDB } = require("./db/db");
 
-require("dotenv").config("./env");
+require("dotenv").config("./.env");
 
 connectDB()
   .then(() => {
@@ -11,4 +11,4 @@ connectDB()
   })
   .catch((error) => {
     console.log("Mongodb connection failed", error);
-  }); 
+  });
